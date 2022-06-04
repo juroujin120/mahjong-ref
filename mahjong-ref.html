@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+/*
+  This font shows 1,2,3,4 as 東,南,西,北 tiles. Source:
+  https://dragon0549610.wixsite.com/tenhoublog/single-post/2018/03/16/麻雀牌フォント
+*/
+@font-face {
+  font-family: 'tenhou_paiga';
+  font-style: monospace;
+  src: url(tenhou_paiga.ttf);
+}
+.r2 { transform: rotate(270deg) }
+.r3 { transform: rotate(180deg) }
+.r4 { transform: rotate(90deg) }
+.r2, .r3, .r4 { opacity: 50%; }
+table.wind {
+  padding: 3em;
+  border: dashed 1px;
+}
+table.wind td {
+  width: 0.8em;
+  height: 0.8em;
+  text-align: center;
+  font-family: 'tenhou_paiga';
+  font-size: 100px;
+  line-height: 1%;
+}
+table.list {
+  text-align: center;
+}
+table.list tr:not(:first-child) {
+  text-align: center;
+  font-family: 'tenhou_paiga';
+  font-size: 100px;
+  line-height: 85%;
+}
+</style>
+<body>
+
+<table class="wind">
+<tr> <td></td><td class="r3">3</td><td></td> </tr>
+<tr> <td class="r4">4</td><td></td><td class="r2">2</td> </tr>
+<tr> <td></td><td>1</td><td></td> </tr>
+</table>
+
+<br><br><br>
+
+<table class="list">
+<tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td> <td>9</td> </tr>
+<tr> <td>q</td> <td>w</td> <td>e</td> <td>r</td> <td>t</td> <td>y</td> <td>u</td> <td>i</td> <td>o</td> </tr>
+<tr> <td>a</td> <td>s</td> <td>d</td> <td>f</td> <td>g</td> <td>h</td> <td>j</td> <td>k</td> <td>l</td> </tr>
+<tr> <td>z</td> <td>x</td> <td>c</td> <td>v</td> <td>b</td> <td>n</td> <td>m</td> <td>,</td> <td>.</td> </tr>
+</table>
+
+<br><br><br>
+
+<table class="list">
+<tr> <td>east</td> <td>south</td> <td>west</td> <td>north</td> <td>white</td> <td>green</td> <td>red</td> </tr>
+<tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> </tr>
+</table>
+
+</body>
+</html>
