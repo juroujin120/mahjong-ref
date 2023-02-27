@@ -35,6 +35,9 @@ table.list tr:not(:first-child) {
   font-size: 100px;
   line-height: 85%;
 }
+table.list.gap56 td:nth-child(n+5):nth-child(-n+6) {
+  visibility: hidden;
+}
 </style>
 <body>
 
@@ -55,9 +58,9 @@ table.list tr:not(:first-child) {
 
 <br><br><br>
 
-<table class="list">
-<tr> <td>east</td> <td>south</td> <td>west</td> <td>north</td> <td>white</td> <td>green</td> <td>red</td> </tr>
-<tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> </tr>
+<table class="list gap56">
+<tr> <td>east</td> <td>south</td> <td>west</td> <td>north</td> <td></td> <td></td> <td>white</td> <td>green </td> <td>red</td> </tr>
+<tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>5</td> <td>5</td> <td>6</td> <td>7</td> </tr>
 </table>
 
 </body>
